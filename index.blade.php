@@ -48,12 +48,12 @@
         <nav id="nav-menu-container">
             <ul class="nav-menu text-primary" style="text-decoration-color: #3bb75e">
                 <li class="menu-active">
-                    <a style="color: #3bb75e;">Personal</a>
+                    <a style="color: #3bb75e;" href="{{ url('/') }}">Personal</a>
                 </li>
                 <li><a href="{{route('business')}}">Business</a></li>
                <!-- <li><a href="#services">Developers</a></li>-->
                 @guest
-                    <li class="menu-has-children" style=" border: #081e5b"><a
+                    <li class="menu-has-children" style=" border: #081e5b"><a href="{{route('auth.show.register.personal')}}"
                             class="cbtn  btn-shadow btn-width " style="background-color: #3bb75e;margin: -3px"><b> Sign up
                         today </b></a>
                         <ul>

@@ -48,10 +48,10 @@
         <nav id="nav-menu-container">
             <ul class="nav-menu text-primary">
                 <li><a href="{{url('/')}}">Personal</a></li>
-                <li class="menu-active"><a href="#portfolio">Business</a></li>
+                <li class="menu-active"><a href="{{route('business')}}">Business</a></li>
                 <!--  <li><a href="#services">Developers</a></li> -->
                 @guest
-                    <li class="menu-has-children" style=" border: #081e5b"><a
+                    <li class="menu-has-children" style=" border: #081e5b"><a href="{{route('auth.show.register.personal')}}"
                             class="cbtn  btn-shadow btn-width " style="background-color: #3bb75e;margin: -3px"><b> Sign up
                         today </b></a>
                         <ul>
@@ -98,7 +98,7 @@
         <div class="headcon">
             <img src="{{asset('frontend/img/business.png')}}" alt="" class="" style="width: 100%;height: 100%;">
             <div class="row bottom-left" style="margin-left: 20px;margin-top: 190px">
-                <a class="cbtn btn-shadow btn-width text-primary" style="background-color: #243949" "{{route('auth.show.register.business')}}">Get in touch</a>
+                <a class="cbtn btn-shadow btn-width text-primary" style="background-color: #243949" href="{{route('auth.show.register.business')}}">Get in touch</a>
             </div>
         </div>
     </section>
@@ -224,7 +224,7 @@
                         identities and anti-fraud tools
                     </p>
                     <div class="" style="margin-left: 50px;margin-top: 50px">
-                        <a class="cbtn btn-shadow btn-width text-primary" style="background-color: #243949"><b>Request
+                        <a class="cbtn btn-shadow btn-width text-primary" style="background-color: #243949" href="{{route('auth.show.register.business')}}"><b>Request
                             Access</b></a>
                     </div>
                 </div>
@@ -260,7 +260,7 @@
                     <h4 class="text-center" style="margin-left: 20px"><b>Enterprise </b></h4>
                     <p class="" style="margin-left: 20px;text-align: left"> Secure your client payments with our enterprise digital escrow solution. For Banks,investment firms and Large corporates.</p>
                     <div class="" style="margin-left: 50px;margin-top: 190px">
-                        <a class="cbtn btn-shadow btn-width text-primary" style="background-color: #243949">Request Demo</a>
+                        <a class="cbtn btn-shadow btn-width text-primary" style="background-color: #243949" href="{{route('auth.show.register.business')}}">Request Demo</a>
                     </div>
                 </div>
             </div>
